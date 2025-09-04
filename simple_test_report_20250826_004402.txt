@@ -1,0 +1,35 @@
+Health AI Twin - Simple Test Report
+============================================================
+Generated: 2025-08-26 00:44:02
+
+SUMMARY:
+Total Categories: 1
+Total Tests: 0
+Passed: 0
+Failed: 1
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+Basic Functionality:
+  Status: ❌ FAILED
+  Duration: 0.49s
+  Tests: 0
+  Error: ImportError while loading conftest '/Users/adwaith/Desktop/My Projects/Health AITwin/tests/conftest.py'.
+tests/conftest.py:24: in <module>
+    from app.main import app
+backend/app/main.py:14: in <module>
+    from routes.patients import router as patients_router
+backend/app/routes/patients.py:11: in <module>
+    from models.patient import Patient, PatientCreate, PatientUpdate
+backend/app/models/patient.py:21: in <module>
+    class PatientBase(BaseModel):
+backend/app/models/patient.py:27: in PatientBase
+    email: str = Field(..., regex=r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/pydantic/fields.py:1090: in Field
+    raise PydanticUserError('`regex` is removed. use `pattern` instead', code='removed-kwargs')
+E   pydantic.errors.PydanticUserError: `regex` is removed. use `pattern` instead
+E
+E   For further information visit https://errors.pydantic.dev/2.11/u/removed-kwargs
+

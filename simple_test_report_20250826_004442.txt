@@ -1,0 +1,43 @@
+Health AI Twin - Simple Test Report
+============================================================
+Generated: 2025-08-26 00:44:42
+
+SUMMARY:
+Total Categories: 1
+Total Tests: 0
+Passed: 1
+Failed: 0
+Success Rate: 100.0%
+
+DETAILED RESULTS:
+
+Basic Functionality:
+  Status: ✅ PASSED
+  Duration: 0.24s
+  Tests: 0
+  Output:
+[1m============================= test session starts ==============================[0m
+platform darwin -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- /usr/local/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/adwaith/Desktop/My Projects/Health AITwin
+plugins: asyncio-1.1.0, anyio-4.8.0, mock-3.14.1
+asyncio: mode=Mode.STRICT, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+[1mcollecting ... [0mcollected 14 items
+
+tests/test_basic.py::TestBasicFunctionality::test_basic_math [32mPASSED[0m[32m      [  7%][0m
+tests/test_basic.py::TestBasicFunctionality::test_numpy_operations [32mPASSED[0m[32m [ 14%][0m
+tests/test_basic.py::TestBasicFunctionality::test_date_operations [32mPASSED[0m[32m [ 21%][0m
+tests/test_basic.py::TestBasicFunctionality::test_list_operations [32mPASSED[0m[32m [ 28%][0m
+tests/test_basic.py::TestBasicFunctionality::test_string_operations [32mPASSED[0m[32m [ 35%][0m
+tests/test_basic.py::TestBasicFunctionality::test_dictionary_operations [32mPASSED[0m[32m [ 42%][0m
+tests/test_basic.py::TestBasicFunctionality::test_health_metrics_calculation [32mPASSED[0m[32m [ 50%][0m
+tests/test_basic.py::TestBasicFunctionality::test_data_validation [32mPASSED[0m[32m [ 57%][0m
+tests/test_basic.py::TestBasicFunctionality::test_statistical_calculations [32mPASSED[0m[32m [ 64%][0m
+tests/test_basic.py::TestBasicFunctionality::test_trend_analysis [32mPASSED[0m[32m  [ 71%][0m
+tests/test_basic.py::TestBasicFunctionality::test_performance_benchmark [32mPASSED[0m[32m [ 78%][0m
+tests/test_basic.py::TestBasicFunctionality::test_error_handling [32mPASSED[0m[32m  [ 85%][0m
+tests/test_basic.py::TestBasicFunctionality::test_data_structure_validation [32mPASSED[0m[32m [ 92%][0m
+tests/test_basic.py::TestBasicFunctionality::test_health_score_calculation [32mPASSED[0m[32m [100%][0m
+
+[32m============================== [32m[1m14 passed[0m[32m in 0.05s[0m[32m ==============================[0m
+

@@ -1,0 +1,42 @@
+Health AI Twin - Comprehensive Test Report
+============================================================
+Generated: 2025-08-26 00:32:30
+
+SUMMARY:
+Total Categories: 3
+Total Tests: 0
+Passed: 0
+Failed: 3
+Success Rate: 0.0%
+
+DETAILED RESULTS:
+
+Lab Report Extraction:
+  Status: ❌ FAILED
+  Duration: 0.31s
+  Tests: 0
+  Error: ImportError while loading conftest '/Users/adwaith/Desktop/My Projects/Health AITwin/tests/conftest.py'.
+tests/conftest.py:19: in <module>
+    from fastapi.testclient import TestClient
+E   ModuleNotFoundError: No module named 'fastapi'
+
+
+Wearable Data Logging:
+  Status: ❌ FAILED
+  Duration: 0.12s
+  Tests: 0
+  Error: ImportError while loading conftest '/Users/adwaith/Desktop/My Projects/Health AITwin/tests/conftest.py'.
+tests/conftest.py:19: in <module>
+    from fastapi.testclient import TestClient
+E   ModuleNotFoundError: No module named 'fastapi'
+
+
+ML Prediction Accuracy:
+  Status: ❌ FAILED
+  Duration: 0.12s
+  Tests: 0
+  Error: ImportError while loading conftest '/Users/adwaith/Desktop/My Projects/Health AITwin/tests/conftest.py'.
+tests/conftest.py:19: in <module>
+    from fastapi.testclient import TestClient
+E   ModuleNotFoundError: No module named 'fastapi'
+

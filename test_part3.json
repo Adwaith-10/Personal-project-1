@@ -1,0 +1,9 @@
+{
+  "patient_id": "test123",
+  "age": 35,
+  "bmi": 24.5,
+  "heart_rate_avg": 72,
+  "steps_avg": 8500,
+  "sleep_hours_avg": 7.5,
+  "calories_avg": 2100
+}

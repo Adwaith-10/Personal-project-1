@@ -1,0 +1,305 @@
+# Food Vision Pro - Density and Shape Priors
+# This file contains density values (g/cm³) and shape information for different food categories
+# Used for estimating food volumes and weights from image analysis
+
+# Density values in g/cm³ (grams per cubic centimeter)
+densities:
+  # Proteins
+  grilled_chicken: 1.65
+  roasted_chicken: 1.65
+  fried_chicken: 1.45
+  chicken_breast: 1.65
+  chicken_thigh: 1.60
+  chicken_wings: 1.40
+  beef: 1.20
+  steak: 1.20
+  ground_beef: 1.15
+  pork: 1.20
+  pork_chop: 1.20
+  bacon: 1.10
+  salmon: 1.02
+  fish: 1.02
+  tuna: 1.02
+  cod: 1.02
+  shrimp: 1.05
+  eggs: 1.03
+  tofu: 1.15
+  
+  # Grains and Starches
+  rice: 1.20
+  brown_rice: 1.20
+  white_rice: 1.20
+  pasta: 1.20
+  spaghetti: 1.20
+  penne: 1.20
+  bread: 0.30
+  toast: 0.25
+  sandwich_bread: 0.30
+  bagel: 0.35
+  croissant: 0.25
+  pizza: 0.80
+  tortilla: 0.25
+  oatmeal: 0.60
+  cereal: 0.30
+  granola: 0.45
+  
+  # Vegetables
+  broccoli: 0.91
+  cauliflower: 0.91
+  carrots: 0.95
+  spinach: 0.85
+  lettuce: 0.80
+  kale: 0.85
+  tomatoes: 0.95
+  onions: 0.95
+  peppers: 0.95
+  mushrooms: 0.90
+  zucchini: 0.95
+  eggplant: 0.95
+  asparagus: 0.90
+  green_beans: 0.90
+  peas: 0.95
+  corn: 0.95
+  potatoes: 0.95
+  sweet_potatoes: 0.95
+  
+  # Fruits
+  apples: 0.95
+  bananas: 0.95
+  oranges: 0.95
+  strawberries: 0.95
+  blueberries: 0.95
+  grapes: 0.95
+  peaches: 0.95
+  pears: 0.95
+  pineapple: 0.95
+  mango: 0.95
+  watermelon: 0.95
+  cantaloupe: 0.95
+  
+  # Dairy and Alternatives
+  milk: 1.03
+  yogurt: 1.05
+  cheese: 1.10
+  cheddar: 1.10
+  mozzarella: 1.10
+  parmesan: 1.20
+  cream_cheese: 1.05
+  butter: 0.90
+  cream: 1.00
+  ice_cream: 0.90
+  cottage_cheese: 1.05
+  
+  # Nuts and Seeds
+  almonds: 0.95
+  walnuts: 0.90
+  peanuts: 0.90
+  cashews: 0.90
+  sunflower_seeds: 0.90
+  chia_seeds: 0.90
+  flax_seeds: 0.90
+  
+  # Legumes
+  beans: 1.15
+  black_beans: 1.15
+  kidney_beans: 1.15
+  chickpeas: 1.15
+  lentils: 1.15
+  peas: 0.95
+  
+  # Soups and Sauces
+  soup: 1.00
+  broth: 1.00
+  gravy: 1.10
+  tomato_sauce: 1.10
+  pasta_sauce: 1.10
+  salad_dressing: 1.00
+  mayonnaise: 0.95
+  ketchup: 1.10
+  mustard: 1.10
+  
+  # Desserts and Sweets
+  cake: 1.20
+  cookies: 0.80
+  brownies: 1.10
+  pie: 1.20
+  chocolate: 1.20
+  candy: 1.20
+  ice_cream: 0.90
+  pudding: 1.05
+  
+  # Beverages
+  juice: 1.05
+  smoothie: 1.05
+  coffee: 1.00
+  tea: 1.00
+  soda: 1.05
+  water: 1.00
+  
+  # Default fallback
+  unknown_food: 1.00
+
+# Shape priors for volume estimation
+# Options: mound, cylinder, slab, sphere, liquid
+shapes:
+  # Proteins (typically mound or slab)
+  grilled_chicken: mound
+  roasted_chicken: mound
+  fried_chicken: mound
+  chicken_breast: slab
+  chicken_thigh: mound
+  chicken_wings: mound
+  beef: slab
+  steak: slab
+  ground_beef: mound
+  pork: slab
+  pork_chop: slab
+  bacon: slab
+  salmon: slab
+  fish: slab
+  tuna: slab
+  cod: slab
+  shrimp: mound
+  eggs: sphere
+  tofu: slab
+  
+  # Grains and Starches (typically mound)
+  rice: mound
+  brown_rice: mound
+  white_rice: mound
+  pasta: mound
+  spaghetti: mound
+  penne: mound
+  bread: slab
+  toast: slab
+  sandwich_bread: slab
+  bagel: cylinder
+  croissant: mound
+  pizza: slab
+  tortilla: slab
+  oatmeal: mound
+  cereal: mound
+  granola: mound
+  
+  # Vegetables (typically mound or sphere)
+  broccoli: mound
+  cauliflower: mound
+  carrots: cylinder
+  spinach: mound
+  lettuce: mound
+  kale: mound
+  tomatoes: sphere
+  onions: sphere
+  peppers: mound
+  mushrooms: mound
+  zucchini: cylinder
+  eggplant: mound
+  asparagus: cylinder
+  green_beans: cylinder
+  peas: sphere
+  corn: mound
+  potatoes: sphere
+  sweet_potatoes: sphere
+  
+  # Fruits (typically sphere or mound)
+  apples: sphere
+  bananas: cylinder
+  oranges: sphere
+  strawberries: sphere
+  blueberries: sphere
+  grapes: sphere
+  peaches: sphere
+  pears: sphere
+  pineapple: cylinder
+  mango: mound
+  watermelon: sphere
+  cantaloupe: sphere
+  
+  # Dairy and Alternatives
+  milk: liquid
+  yogurt: liquid
+  cheese: slab
+  cheddar: slab
+  mozzarella: slab
+  parmesan: slab
+  cream_cheese: mound
+  butter: slab
+  cream: liquid
+  ice_cream: mound
+  cottage_cheese: mound
+  
+  # Nuts and Seeds (typically mound)
+  almonds: mound
+  walnuts: mound
+  peanuts: mound
+  cashews: mound
+  sunflower_seeds: mound
+  chia_seeds: mound
+  flax_seeds: mound
+  
+  # Legumes (typically mound)
+  beans: mound
+  black_beans: mound
+  kidney_beans: mound
+  chickpeas: mound
+  lentils: mound
+  peas: mound
+  
+  # Soups and Sauces (typically liquid)
+  soup: liquid
+  broth: liquid
+  gravy: liquid
+  tomato_sauce: liquid
+  pasta_sauce: liquid
+  salad_dressing: liquid
+  mayonnaise: mound
+  ketchup: liquid
+  mustard: mound
+  
+  # Desserts and Sweets (typically mound)
+  cake: mound
+  cookies: mound
+  brownies: mound
+  pie: mound
+  chocolate: slab
+  candy: mound
+  ice_cream: mound
+  pudding: mound
+  
+  # Beverages (typically liquid)
+  juice: liquid
+  smoothie: liquid
+  coffee: liquid
+  tea: liquid
+  soda: liquid
+  water: liquid
+  
+  # Default fallback
+  unknown_food: mound
+
+# Volume estimation constants
+volume_constants:
+  # Height multipliers for different shapes
+  mound_height_multiplier: 0.8      # Height ≈ 0.8 * radius for food mounds
+  cylinder_height_multiplier: 0.5   # Height ≈ 0.5 * radius for typical food cylinders
+  slab_height_cm: 1.0               # Default height for slabs in cm
+  liquid_height_cm: 0.5             # Default height for liquids in cm
+  
+  # Minimum and maximum volumes
+  min_volume_cm3: 0.1               # Minimum volume in cubic centimeters
+  max_volume_cm3: 1000.0            # Maximum volume in cubic centimeters
+  
+  # Weight limits
+  min_weight_g: 5.0                 # Minimum weight in grams
+  max_weight_g: 1000.0              # Maximum weight in grams
+
+# Notes
+notes: |
+  These density and shape priors are estimates based on typical food properties.
+  Actual values may vary depending on preparation method, cooking time, and ingredients.
+  
+  For best results:
+  - Use plate diameter for accurate scale reference
+  - Consider food preparation method when estimating
+  - Allow manual overrides for better accuracy
+  - Update priors based on user feedback and corrections
